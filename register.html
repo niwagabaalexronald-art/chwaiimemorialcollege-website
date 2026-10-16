@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register With Us | Chwa II Memorial College – Namungoona</title>
+  <meta name="description" content="Apply for admission to Chwa II Memorial College Namungoona. Online registration form for S.1 to S.6, boarding and day.">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="topstrip">
+    <div class="wrap" style="max-width:1180px">
+      <span><i></i>Namungoona Hill, 6.5KM off Kampala Hoima Road, Kampala – Uganda</span>
+      <span><i>📞</i>+256 704943539 &nbsp;|&nbsp; <i>✉️</i>info@chwaiicollege.ac.ug</span>
+    </div>
+  </div>
+  <header class="site">
+    <div class="navwrap">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.jpg" alt="Chwa II Memorial College crest">
+        <span class="name">Chwa II Memorial College<small>Namungoona · Est. 1934</small></span>
+      </a>
+      <button class="menu-toggle" onclick="document.getElementById('mainnav').classList.toggle('open')">☰ Menu</button>
+      <nav class="main" id="mainnav">
+        <a href="index.html">Home</a>
+        <a href="academics.html">Academics</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="register.html" class="active">Register With Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a> / Register With Us</div>
+      <h1>Register With Us</h1>
+      <p>Begin your journey to the heights — admissions for S.1 and S.5 are open</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="center">
+        <span class="kicker">Admissions</span>
+        <h2 class="title">Online Application Form</h2>
+        <p class="lead-p">Fill in the form below and our admissions office will contact you. You can also register in person at the school offices on Namungoona Hill, Monday to Friday, 8:00 AM – 4:00 PM.</p>
+      </div>
+
+      <form class="reg" id="regform" novalidate>
+        <h3 style="margin-bottom:1.2rem">📝 Student Details</h3>
+        <div class="frow">
+          <div class="field"><label for="sname">Student's Full Name *</label><input id="sname" required placeholder="e.g. Namazzi Sarah"></div>
+          <div class="field"><label for="dob">Date of Birth *</label><input id="dob" type="date" required></div>
+        </div>
+        <div class="frow">
+          <div class="field"><label for="gender">Gender *</label>
+            <select id="gender" required><option value="">Select…</option><option>Female</option><option>Male</option></select>
+          </div>
+          <div class="field"><label for="class">Class Applying For *</label>
+            <select id="class" required>
+              <option value="">Select…</option>
+              <option>Senior One (S.1)</option><option>Senior Two (S.2)</option>
+              <option>Senior Three (S.3)</option><option>Senior Four (S.4)</option>
+              <option>Senior Five (S.5)</option><option>Senior Six (S.6)</option>
+            </select>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="field"><label for="combo">A-Level Combination (S.5/S.6 only)</label>
+            <select id="combo"><option value="">N/A</option><option>PCM – Physics, Chemistry, Mathematics</option><option>PCB – Physics, Chemistry, Biology</option><option>BCM – Biology, Chemistry, Mathematics</option><option>HED – History, Economics, Divinity</option><option>LGP – Literature, Geography, Psychology/CRE</option><option>Other / Undecided</option></select>
+          </div>
+          <div class="field"><label for="mode">Day / Boarding *</label>
+            <select id="mode" required><option value="">Select…</option><option>Boarding</option><option>Day</option></select>
+          </div>
+        </div>
+
+        <h3 style="margin:1.6rem 0 1.2rem">👨‍👩‍👧 Parent / Guardian Details</h3>
+        <div class="frow">
+          <div class="field"><label for="gname">Parent/Guardian Full Name *</label><input id="gname" required placeholder="e.g. Mr. Ssemwanga John"></div>
+          <div class="field"><label for="phone">Telephone Number *</label><input id="phone" type="tel" required placeholder="+256 7XX XXX XXX"></div>
+        </div>
+        <div class="frow">
+          <div class="field"><label for="email">Email Address (optional)</label><input id="email" type="email" placeholder="you@example.com"></div>
+          <div class="field"><label for="addr">Home Address / Village *</label><input id="addr" required placeholder="e.g. Kawaala, Kampala"></div>
+        </div>
+
+        <h3 style="margin:1.6rem 0 1.2rem">📄 Previous School</h3>
+        <div class="frow">
+          <div class="field"><label for="pschool">Former School (if applicable)</label><input id="pschool" placeholder="e.g. Namungoona Orthodox Primary School"></div>
+          <div class="field"><label for="pyear">Year of Leaving</label><input id="pyear" type="number" min="2010" max="2026" placeholder="e.g. 2025"></div>
+        </div>
+        <div class="frow full">
+          <div class="field"><label for="remarks">Anything We Should Know? (health, bursary needs, talents…)</label>
+            <textarea id="remarks" rows="4" placeholder="Tell us about the learner…"></textarea>
+          </div>
+        </div>
+
+        <label style="display:flex;gap:.6rem;align-items:flex-start;font-size:.9rem;color:var(--muted);margin:.6rem 0 1.2rem">
+          <input type="checkbox" id="consent" required style="width:auto;margin-top:.25rem">
+          <span>I confirm the information provided is true, and I consent to Chwa II Memorial College contacting me regarding this application.</span>
+        </label>
+
+        <button type="submit" class="btn btn-green" style="border:0;cursor:pointer;font-size:1rem">Submit Application ✦</button>
+        <div class="form-msg" id="formmsg">✅ Thank you! Your application has been received. Our admissions office will contact you shortly on the telephone number provided.</div>
+      </form>
+
+      <div class="center" style="margin-top:2.5rem">
+        <span class="kicker">What Happens Next</span>
+        <div class="grid c3" style="text-align:left">
+          <div class="card"><div class="icon">1️⃣</div><h3>Application Received</h3><p>Our admissions office reviews your form and contacts you within a few working days.</p></div>
+          <div class="card"><div class="icon">2️⃣</div><h3>Interview & Placement</h3><p>The learner attends a friendly interview and placement assessment, especially for S.1 and S.5 entry.</p></div>
+          <div class="card"><div class="icon">3️⃣</div><h3>Enrolment</h3><p>Successful applicants receive an admission letter and pay a modest enrolment fee to secure the place.</p></div>
+        </div>
+        <div class="note" style="max-width:720px;margin:2rem auto 0;text-align:left">📋 Required documents at enrolment: a photocopy of the learner's birth certificate or National ID, previous school reports, and two passport photos.</div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.getElementById('regform').addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!this.checkValidity()){ this.reportValidity(); return; }
+      document.getElementById('formmsg').style.display='block';
+      this.reset();
+      document.getElementById('formmsg').scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  </script>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="footgrid">
+        <div>
+          <div class="footbrand">
+            <img src="assets/logo.jpg" alt="Crest">
+            <div>
+              <strong style="color:#fff">Chwa II Memorial College</strong><br>
+              <em style="color:var(--gold);font-size:.85rem">Through Difficulties to the Heights</em>
+            </div>
+          </div>
+          <p style="font-size:.88rem">Uganda's first private secondary school, founded in 1934 by the Uganda Orthodox Church on land donated by Ssekabaka Daudi Chwa II of Buganda.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="register.html">Register With Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>School Life</h4>
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="academics.html#subjects">Subjects Offered</a></li>
+            <li><a href="services.html#boarding">Boarding Facilities</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <ul>
+            <li>Namungoona Hill, Rubaga Division</li>
+            <li>Off Kampala–Hoima Road</li>
+            <li>Opposite Namungoona Police Post</li>
+            <li>P.O. Box 7008, Kampala</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">© <span id="yr"></span> Chwa II Memorial College – Namungoona. All rights reserved. · A school of the Uganda Orthodox Church</div>
+    </div>
+  </footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
