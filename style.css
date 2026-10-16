@@ -1,0 +1,184 @@
+/* ============================================================
+   CHWA II MEMORIAL COLLEGE — NAMUNGOONA
+   Theme: School green & gold  |  Motto: Through Difficulties
+   to the Heights
+   ============================================================ */
+:root{
+  --green:#0a5c2e;
+  --green-dark:#053d1f;
+  --green-light:#e8f4ec;
+  --gold:#f2c200;
+  --gold-dark:#c99a00;
+  --ink:#1d2b22;
+  --muted:#5c6b62;
+  --white:#ffffff;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(5,61,31,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);background:#fbfdfb;line-height:1.65;
+}
+h1,h2,h3,h4{font-family:Georgia,'Times New Roman',serif;color:var(--green-dark);line-height:1.25}
+img{max-width:100%;display:block}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ---------- Top strip ---------- */
+.topstrip{background:var(--green-dark);color:#dff0e5;font-size:.85rem}
+.topstrip .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.4rem 1.25rem;flex-wrap:wrap}
+.topstrip span i{color:var(--gold);font-style:normal;margin-right:.35rem}
+
+/* ---------- Header / Nav ---------- */
+header.site{
+  position:sticky;top:0;z-index:50;background:var(--white);
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+.navwrap{max-width:1180px;margin:auto;display:flex;align-items:center;gap:1rem;padding:.6rem 1.25rem}
+.brand{display:flex;align-items:center;gap:.75rem;flex:1;min-width:0}
+.brand img{width:56px;height:56px;object-fit:contain;border-radius:8px}
+.brand .name{font-family:Georgia,serif;font-weight:700;color:var(--green-dark);font-size:1.05rem;line-height:1.15}
+.brand .name small{display:block;font-family:'Segoe UI',sans-serif;font-weight:600;color:var(--gold-dark);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
+nav.main{display:flex;gap:.25rem;flex-wrap:wrap}
+nav.main a{
+  padding:.55rem .8rem;border-radius:8px;font-weight:600;font-size:.92rem;color:var(--ink);white-space:nowrap;
+}
+nav.main a:hover{background:var(--green-light);text-decoration:none;color:var(--green)}
+nav.main a.active{background:var(--green);color:#fff}
+.menu-toggle{display:none;background:var(--green);color:#fff;border:0;border-radius:8px;padding:.5rem .8rem;font-size:1.1rem;cursor:pointer}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;color:#fff;
+  background:linear-gradient(115deg,rgba(5,61,31,.94),rgba(10,92,46,.82)),
+             url('chwa2.JPG')center/cover;
+  padding:5rem 1.25rem 4.5rem;text-align:center;
+}
+.hero .crest{width:120px;margin:0 auto 1.25rem;filter:drop-shadow(0 8px 20px rgba(0,0,0,.35))}
+.hero h1{color:#fff;font-size:clamp(1.9rem,4.5vw,3.2rem);max-width:900px;margin:0 auto .5rem}
+.hero .motto{color:var(--gold);font-style:italic;font-size:1.15rem;margin-bottom:1.4rem}
+.hero p.lead{max-width:720px;margin:0 auto 2rem;color:#e6f3ea;font-size:1.05rem}
+.btnrow{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.7rem;border-radius:999px;font-weight:700;font-size:.95rem;text-decoration:none;transition:.2s}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--green-dark)}
+.btn-gold:hover{background:#ffd83d;color:var(--green-dark)}
+.btn-ghost{border:2px solid #fff;color:#fff}
+.btn-ghost:hover{background:#ffffff22;color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-dark);color:#fff}
+
+/* ---------- Sections ---------- */
+.wrap{max-width:1180px;margin:auto;padding:0 1.25rem}
+section.block{padding:4rem 0}
+section.block.tint{background:var(--green-light)}
+.kicker{color:var(--gold-dark);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.78rem}
+h2.title{font-size:clamp(1.5rem,3vw,2.1rem);margin:.35rem 0 1.1rem}
+.lead-p{color:var(--muted);max-width:760px}
+.center{text-align:center}
+.center .lead-p{margin:0 auto}
+
+/* ---------- Cards ---------- */
+.grid{display:grid;gap:1.4rem;margin-top:2rem}
+.grid.c3{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.grid.c2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.grid.c4{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{
+  background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:1.7rem 1.5rem;border-top:4px solid var(--gold);
+  transition:.2s;
+}
+.card:hover{transform:translateY(-4px)}
+.card h3{font-size:1.15rem;margin:.6rem 0 .5rem}
+.card p{color:var(--muted);font-size:.95rem}
+.card .icon{
+  width:52px;height:52px;border-radius:12px;background:var(--green-light);
+  display:flex;align-items:center;justify-content:center;font-size:1.5rem;
+}
+.stat{background:var(--green);color:#fff;border-top-color:var(--gold)}
+.stat h3{color:#fff;font-size:2rem;margin:0}
+.stat p{color:#d7ecdd;font-size:.85rem}
+
+/* ---------- Page banner (inner pages) ---------- */
+.page-banner{
+  background:linear-gradient(115deg,rgba(5,61,31,.95),rgba(10,92,46,.85)),url('chwa.JPG') center/cover;
+  color:#fff;padding:3.6rem 1.25rem;text-align:center;
+}
+.page-banner h1{color:#fff;font-size:clamp(1.7rem,3.5vw,2.6rem)}
+.page-banner p{color:#e6f3ea;margin-top:.4rem}
+.crumbs{font-size:.8rem;color:#cfe6d6;margin-bottom:.8rem}
+.crumbs a{color:var(--gold)}
+
+/* ---------- Lists / values ---------- */
+.checklist{list-style:none;margin-top:1rem}
+.checklist li{padding:.45rem 0 .45rem 2rem;position:relative}
+.checklist li::before{content:"✔";position:absolute;left:0;color:var(--gold-dark);font-weight:700}
+.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center}
+.panel{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:2rem}
+.note{background:#fff8dd;border-left:4px solid var(--gold);border-radius:8px;padding:1rem 1.2rem;margin-top:1.4rem;color:#6b5a00;font-size:.92rem}
+
+/* ---------- Tables ---------- */
+table.tbl{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-top:1.5rem;font-size:.93rem}
+.tbl th{background:var(--green);color:#fff;text-align:left;padding:.85rem 1rem}
+.tbl td{padding:.75rem 1rem;border-bottom:1px solid #e4efe8}
+.tbl tr:nth-child(even) td{background:#f4faf6}
+
+/* ---------- Forms ---------- */
+form.reg{max-width:820px;margin:2rem auto;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:2.2rem}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.1rem}
+.frow.full{grid-template-columns:1fr}
+.field label{display:block;font-weight:600;font-size:.88rem;margin-bottom:.35rem;color:var(--green-dark)}
+.field input,.field select,.field textarea{
+  width:100%;padding:.7rem .85rem;border:1.5px solid #cfe0d5;border-radius:9px;font-size:.95rem;background:#fbfdfb;
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green);background:#fff}
+.form-msg{display:none;margin-top:1rem;background:var(--green-light);border-left:4px solid var(--green);padding:1rem 1.2rem;border-radius:8px;color:var(--green-dark);font-weight:600}
+
+/* ---------- Timeline ---------- */
+.timeline{position:relative;margin:2rem 0;padding-left:2rem;border-left:3px solid var(--gold)}
+.tl-item{position:relative;margin-bottom:1.8rem;padding-left:1.2rem}
+.tl-item::before{content:"";position:absolute;left:-2.47rem;top:.3rem;width:14px;height:14px;background:var(--green);border:3px solid var(--gold);border-radius:50%}
+.tl-item h4{color:var(--green)}
+.tl-item p{color:var(--muted);font-size:.93rem}
+
+/* ---------- Gallery / projects ---------- */
+.proj{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.proj .ph{height:170px;background:linear-gradient(135deg,var(--green),var(--green-dark));display:flex;align-items:center;justify-content:center;font-size:2.6rem;color:var(--gold)}
+.proj .body{padding:1.3rem 1.4rem}
+.proj h3{font-size:1.05rem;margin-bottom:.4rem}
+.proj p{color:var(--muted);font-size:.9rem}
+.tag{display:inline-block;background:var(--green-light);color:var(--green);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.25rem .7rem;border-radius:999px;margin-bottom:.6rem}
+.tag.done{background:#e2f4e8;color:var(--green)}
+.tag.ongoing{background:#fff3c4;color:#8a6d00}
+
+/* ---------- Footer ---------- */
+footer.site{background:var(--green-dark);color:#cfe6d6;margin-top:3rem}
+.footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem;padding:3.2rem 0 2rem}
+footer h4{color:var(--gold);margin-bottom:1rem;font-size:1rem}
+footer ul{list-style:none}
+footer li{margin-bottom:.5rem;font-size:.9rem}
+footer a{color:#cfe6d6}
+footer a:hover{color:var(--gold)}
+.footbrand{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
+.footbrand img{width:52px;background:#fff;border-radius:8px;padding:3px}
+.copy{border-top:1px solid #104a2a;padding:1.1rem 0;text-align:center;font-size:.82rem;color:#9cc4aa}
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  .two-col{grid-template-columns:1fr}
+  .footgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  nav.main{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:.8rem;box-shadow:0 14px 24px rgba(0,0,0,.12)}
+  nav.main.open{display:flex}
+  .menu-toggle{display:block}
+}
+@media (max-width:620px){
+  .frow{grid-template-columns:1fr}
+  .footgrid{grid-template-columns:1fr}
+  form.reg{padding:1.4rem}
+}
+
+.tag.upcoming{background:#eef2f0;color:#5c6b62;border:1px dashed #b9c9c0}
